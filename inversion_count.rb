@@ -1,3 +1,11 @@
+=begin
+Programming Question 1 from Algorithms Part 1 from Coursera.com
+
+Find the number of inversions in an array of 100,000 integers between
+1 and 100,000 (inclusive) in some order, with no integer repeated.
+Integers are given in IntegerArray.txt.
+=end
+
 def merge_sort_and_count(array)
   
   count = 0
@@ -34,7 +42,6 @@ def merge_and_count(left_array, right_array, inversion_count)
       end
     elsif left_array.count > 0
       sorted_array.concat(left_array)
-      #inversion_count = inversion_count + left_array.count
       left_array = left_array.drop(left_array.count)
       
     elsif right_array.count > 0
